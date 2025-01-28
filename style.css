@@ -378,5 +378,66 @@ body.show-emoji-picker em-emoji-picker {
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .chatbot-popup {
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+  }
 
+  .chat-body {
+      height: calc(100vh - 150px);
+      padding: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  #chatbot-toogler {
+      width: 40px;
+      height: 40px;
+      bottom: 10px;
+      right: 10px;
+  }
+
+  .chat-header .header-info .logo-text {
+      font-size: 1rem;
+  }
+
+  .chat-body {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .chatbot-popup {
+      width: 70%;
+      height: 80%;
+      left: auto;
+      right: 15px;
+      border-radius: 12px;
+  }
+
+  .chat-body {
+      height: calc(100vh - 200px);
+      overflow-y: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .chatbot-popup {
+      width: 90%;
+      left: auto;
+      right: 10px;
+      border-radius: 8px;
+  }
+
+  .chat-body {
+      padding: 15px;
+  }
+
+  #chatbot-toogler {
+      bottom: 15px;
+      right: 15px;
+  }
+}
 
